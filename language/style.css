@@ -59,6 +59,7 @@ a:after{
 	left: 0;
 	bottom: -10px;
 	transition: 0.3s;
+	border-radius: 1px;
 }
 
 a:hover:after{
