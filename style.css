@@ -1,3 +1,11 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 @font-face{
 	font-family: 'Main';
 	src: url(fonts/Oswald.ttf);
@@ -15,6 +23,7 @@ nav{
 }
 
 body{
+	min-height: 100vh;
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
@@ -24,12 +33,14 @@ body{
 				url(images/bg.png) repeat center center / cover;
 }
 
-h1{
-	font-family: monospace;
-	font-size: 70px;
-	color: #E0FBFC
-;
+footer{
+	position: sticky;
+	background-color: #000000;
+	height: auto;
+	text-align: center;
+	top: 100%;
 }
+
 p{
 	font-family: monospace;
 	font-size: 36px;
@@ -68,13 +79,20 @@ a:hover:after{
 
 h6{
 	font-family: monospace;
-	font-size: 0px;
+	font-size: 12px;
 }
 
 h2{
 	font-family: monospace;
 	font-size: 36px;
 	
+}
+
+
+h1{
+	font-family: monospace;
+	font-size: 70px;
+	color: #E0FBFC;
 }
 
 ::-webkit-scrollbar {
