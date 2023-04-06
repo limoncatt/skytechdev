@@ -1,7 +1,4 @@
-@media screen and (max-width: 1920px) { /* Big Screens like desktops or tv's, my laptop is in there too*/
-
-
-@font-face {
+@font-face{
 	font-family: 'Main';
 	src: url(fonts/Oswald.ttf);
 }
@@ -9,6 +6,12 @@
 :root{
 	--primary: hsla(200, 99%, 34%, 0.25);
 	--secondary: hsla(132, 99%, 34%, 0.10);
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
 }
 
 body{
@@ -22,24 +25,20 @@ body{
 	overflow: hidden;
 }
 
-h1 {
+h1{
 	font-family: monospace;
 	font-size: 70px;
 	color: #E0FBFC
 ;
 }
-p {
+p{
 	font-family: 'Main';
 	font-size: 36px;
 	color: #E0FBFC;
 }
 
-a {
-	display: block;
-	height: 25px;
-	width: 830px;
-	border-radius: 0px;
-	background-color: hsla(197, 20%, 18%, 0);
+a{
+	position: relative;
 	font-family: monospace;
 	color: #869aeb;
 	font-size: 36px;
@@ -49,162 +48,31 @@ a {
 	bottom: 0;
 	text-rendering: optimizeSpeed;
 	text-decoration: none;
+
 }
 
-h6 {
+a:after{
+	content: "";
+	position: absolute;
+	background-color: #869aeb;
+	height: 3px;
+	width: 0%;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+a:hover:after{
+	width: 100%;
+}
+
+h6{
 	font-family: monospace;
 	font-size: 0px;
 }
 
-h2 {
+h2{
 	font-family: monospace;
 	font-size: 36px;
 	
-}
-}
-
-
-
-@media screen and (max-width: 1280px) { /* Medium screens like tablets or laptops, my laptop is not working with this beacuse it have more than 1280 px */
-	
-
-
-@font-face {
-	font-family: 'Main';
-	src: url(fonts/Oswald.ttf);
-}
-
-:root{
-	--primary: hsla(200, 99%, 34%, 0.25);
-	--secondary: hsla(132, 99%, 34%, 0.10);
-}
-
-body{
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	display: list-item;
-	color: #fff;
-	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-				url(images/bg.png) repeat center center / cover;
-}
-
-h1 {
-	font-family: monospace;
-	font-size: 130px;
-	color: #E0FBFC;
-;
-}
-p {
-	font-family: 'Main';
-	font-size: 76px;
-	color: #E0FBFC;
-}
-
-a {
-	display: block;
-	height: 65px;
-	width: 870px;
-	border-radius: 0px;
-	background-color: hsla(197, 20%, 18%, 0);
-	font-family: monospace;
-	color: #869aeb;
-	font-size: 56px;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	text-rendering: optimizeSpeed;
-	text-decoration: none;
-}
-
-h6 {
-	font-family: monospace;
-	font-size: 0px;
-}
-
-h2 {
-	font-family: monospace;
-	font-size: 76px;
-	
-}
-}
-
-
-
-
-
-@media screen and (max-width: 960px) { /* Small screens like phones or small tablets */
-
-
-
-
-
-	@font-face {
-	font-family: 'Main';
-	src: url(fonts/Oswald.ttf);
-}
-
-:root{
-	--primary: hsla(200, 99%, 34%, 0.25);
-	--secondary: hsla(132, 99%, 34%, 0.10);
-}
-
-body{
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	display: list-item;
-	color: #fff;
-	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-				url(images/bg.png) repeat center center / cover;
-}
-
-h1 {
-	font-family: monospace;
-	font-size: 150px;
-	color: #E0FBFC;
-	box-shadow:
-;
-}
-p {
-	font-family: 'Main';
-	font-size: 96px;
-	color: #E0FBFC;
-	box-shadow:
-}
-
-a {
-	display: block;
-	height: 65px;
-	width: 890px;
-	border-radius: 0px;
-	background-color: hsla(197, 20%, 18%, 0);
-	font-family: monospace;
-	color: #869aeb;
-	font-size: 96px;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	text-rendering: optimizeSpeed;
-	text-decoration: none;
-}
-
-h6 {
-	font-family: monospace;
-	font-size: 0px;
-}
-
-h2 {
-	font-family: monospace;
-	font-size: 96px;
-	
-}
-}
-
-
-
-@media screen and (max-width: 360px) { /* Very small screens, works very nice but can call some trouble if it's too small */
-
 }
