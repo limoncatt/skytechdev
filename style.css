@@ -22,7 +22,6 @@ body{
 	color: #fff;
 	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
 				url(images/bg.png) repeat center center / cover;
-	overflow: hidden;
 }
 
 h1{
@@ -32,7 +31,7 @@ h1{
 ;
 }
 p{
-	font-family: 'Main';
+	font-family: monospace;
 	font-size: 36px;
 	color: #E0FBFC;
 }
@@ -56,7 +55,7 @@ a:after{
 	position: absolute;
 	background-color: #869aeb;
 	height: 3px;
-	width: 100%;
+	width: 0%;
 	left: 0;
 	bottom: -10px;
 	transition: 0.3s;
@@ -75,4 +74,8 @@ h2{
 	font-family: monospace;
 	font-size: 36px;
 	
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
