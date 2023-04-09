@@ -46,6 +46,10 @@ footer{
 	top: 100%;
 }
 
+header{
+	background-color: hsla(200, 99%, 34%, 0.25);
+}
+
 p{
 	font-family: monospace;
 	font-size: 36px;
