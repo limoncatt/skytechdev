@@ -33,6 +33,11 @@ body{
 				url(images/bg.png) repeat center center / cover;
 }
 
+.wrapper{
+	margin: 0 auto;
+	width: 75vw;
+}
+
 footer{
 	position: sticky;
 	background-color: hsla(200, 99%, 34%, 0.10);
@@ -49,6 +54,7 @@ p{
 
 a{
 	position: relative;
+	justify-content: space-around;
 	font-family: monospace;
 	color: #869aeb;
 	font-size: 36px;
@@ -58,6 +64,7 @@ a{
 	bottom: 0;
 	text-rendering: optimizeSpeed;
 	text-decoration: none;
+	cursor: none;
 
 }
 
@@ -65,15 +72,17 @@ a:after{
 	content: "";
 	position: absolute;
 	background-color: #869aeb;
-	height: 3px;
+	height: 0px;
 	width: 0%;
 	left: 0;
-	bottom: -10px;
+	bottom: 0px;
 	transition: 0.3s;
 }
 
 a:hover:after{
+	height: 3px;
 	width: 100%;
+	bottom: -10px;
 }
 
 h6{
@@ -97,3 +106,6 @@ h1{
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+/*! SkyTech */
