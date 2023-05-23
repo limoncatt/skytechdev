@@ -7,8 +7,7 @@ $prefix: "mo-";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @font-face{
-	font-family: 'Main';
-	src: url(fonts/Oswald.ttf);
+	font-family: "Courier New", monospace;
 }
 
 :root{
@@ -20,6 +19,8 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	margin: auto;
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+			url(images/bg.png) repeat center center / cover;
 }
 
 body{
@@ -36,75 +37,62 @@ body{
 .wrapper{
 	margin: 0 auto;
 	width: 75vw;
-	background-color: black;
 }
 
 footer{
 	position: sticky;
-	background-color: hsla(200, 99%, 34%, 0.10);
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
 	height: auto;
 	text-align: center;
 	top: 100%;
 }
 
 header{
-	background-color: hsla(200, 99%, 34%, 0.25);
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
 }
 
 p{
-	font-family: monospace;
+	font-family: "Courier New", monospace;
 	font-size: 36px;
 	color: #E0FBFC;
+	user-select: none;
 }
 
 a{
 	position: relative;
 	justify-content: space-around;
-	font-family: monospace;
-	color: #869aeb;
+	font-family: "Courier New", monospace;
 	font-size: 36px;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
 	text-decoration: none;
-	cursor: none;
-
-}
-
-a:after{
-	content: "";
-	position: absolute;
-	background-color: #869aeb;
-	height: 0px;
-	width: 0%;
-	left: 0;
-	bottom: 0px;
 	transition: 0.3s;
+	color: #869aeb;
+	user-select: none;
 }
 
-a:hover:after{
-	height: 3px;
-	width: 100%;
-	bottom: -10px;
+a:hover {
+	color: blanchedalmond;
 }
 
 h6{
-	font-family: monospace;
-	font-size: 12px;
+	font-family: "Courier New", monospace;
+	font-size: 10px;
+	user-select: none;
 }
 
 h2{
-	font-family: monospace;
-	font-size: 36px;
-	
+	font-family: "Courier New", monospace;
+	font-size: 40px;
+	user-select: none;
 }
 
 
 h1{
-	font-family: monospace;
+	font-family: "Courier New", monospace;
 	font-size: 70px;
 	color: #E0FBFC;
+	user-select: none;
 }
 
 ::-webkit-scrollbar {
