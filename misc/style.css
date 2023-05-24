@@ -3,11 +3,12 @@
 }
 
 :root{
-	--primary: rgb(15 ,0 ,13);
-	--secondary: rgb(75 ,45 ,73);
+	--primary: black;
+	--secondary: black;
 }
 
 nav{
+	place-content: center;
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
@@ -21,7 +22,7 @@ body{
 	width: 100vw;
 	margin: 0;
 	display: list-item;
-	color: #fff;
+	color: #ffffff;
 	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
 				url(images/bg.png) repeat center center / cover;
 }
@@ -41,9 +42,8 @@ footer{
 }
 
 header{
-	display: flex;
 	flex-wrap: wrap;
-	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+	background: linear-gradient(90deg, var(--secondary), var(--secondary)), 
 				url(images/bg.png) repeat center center / cover;
 }
 
@@ -55,23 +55,21 @@ p{
 }
 
 a{
-	position: relative;
-	justify-content: space-around;
 	font-family: "Courier New", monospace;
-	font-size: 36px;
+	font-size: 40px;
 	text-decoration: none;
 	transition: 0.3s;
 	color: white;
 	user-select: none;
-	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
-				url(images/bg.png) repeat center center / cover;
-	border-radius: 10px;
+	background-color: var(--primary);
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
+	box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
 }
 
 a:hover {
 	color: blanchedalmond;
-
-	border-radius: 50px;
 }
 
 h6{
