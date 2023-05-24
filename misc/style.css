@@ -1,0 +1,121 @@
+@font-face{
+	font-family: "Courier New", monospace;
+}
+
+:root{
+	--primary: rgb(15 ,0 ,13);
+	--secondary: rgb(75 ,45 ,73);
+}
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+body{
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	display: list-item;
+	color: #fff;
+	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 75vw;
+}
+
+footer{
+	position: sticky;
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
+	height: auto;
+	text-align: center;
+	top: 100%;
+}
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
+}
+
+p{
+	font-family: "Courier New", monospace;
+	font-size: 36px;
+	color: #E0FBFC;
+	user-select: none;
+}
+
+a{
+	position: relative;
+	justify-content: space-around;
+	font-family: "Courier New", monospace;
+	font-size: 36px;
+	text-decoration: none;
+	transition: 0.5s;
+	color: white;
+	user-select: none;
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
+	border-radius: 50px;
+}
+
+a:hover {
+	color: blanchedalmond;
+}
+
+h6{
+	font-family: "Courier New", monospace;
+	font-size: 10px;
+	user-select: none;
+}
+
+h5{
+	font-family: "Courier New", monospace;
+	font-size: 50px;
+	user-select: none;
+}
+
+
+h4{
+	font-family: "Courier New", monospace;
+	font-size: 60px;
+	color: #E0FBFC;
+	user-select: none;
+}
+
+h3{
+	font-family: "Courier New", monospace;
+	font-size: 70px;
+	color: #E0FBFC;
+	user-select: none;
+}
+
+h2{
+	font-family: "Courier New", monospace;
+	font-size: 60px;
+	user-select: none;
+}
+
+
+h1{
+	font-family: "Courier New", monospace;
+	font-size: 70px;
+	color: #E0FBFC;
+	user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*! SkyTech */
