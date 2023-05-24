@@ -63,8 +63,7 @@ a{
 	transition: 0.3s;
 	color: white;
 	user-select: none;
-	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
-				url(images/bg.png) repeat center center / cover;
+	background-color: var(--primary);
 	border-radius: 10px;
 }
 
