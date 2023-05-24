@@ -57,7 +57,7 @@ p{
 a{
 	position: relative;
 	justify-content: space-around;
-	font-family: "Courier New", monospace;
+	font-family: monospace;
 	font-size: 36px;
 	text-decoration: none;
 	transition: 0.3s;
