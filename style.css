@@ -60,16 +60,18 @@ a{
 	font-family: "Courier New", monospace;
 	font-size: 36px;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.3s;
 	color: white;
 	user-select: none;
 	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
 				url(images/bg.png) repeat center center / cover;
-	border-radius: 50px;
+	border-radius: 10px;
 }
 
 a:hover {
 	color: blanchedalmond;
+
+	border-radius: 50px;
 }
 
 h6{
