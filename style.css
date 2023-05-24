@@ -42,7 +42,7 @@ footer{
 
 header{
 	flex-wrap: wrap;
-	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+	background: linear-gradient(90deg, var(--secondary), var(--secondary)), 
 				url(images/bg.png) repeat center center / cover;
 }
 
@@ -55,7 +55,7 @@ p{
 
 a{
 	font-family: "Courier New", monospace;
-	font-size: 36px;
+	font-size: 50px;
 	text-decoration: none;
 	transition: 0.3s;
 	color: white;
