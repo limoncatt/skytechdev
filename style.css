@@ -11,16 +11,14 @@ $prefix: "mo-";
 }
 
 :root{
-	--primary: hsla(200, 99%, 34%, 0.25);
-	--secondary: hsla(132, 99%, 34%, 0.10);
+	--primary: rgb(15 ,0 ,13);
+	--secondary: rgb(75 ,45 ,73);
 }
 
 nav{
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
-	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
-			url(images/bg.png) repeat center center / cover;
 }
 
 body{
@@ -70,9 +68,12 @@ a{
 	font-family: "Courier New", monospace;
 	font-size: 36px;
 	text-decoration: none;
-	transition: 0.3s;
-	color: #869aeb;
+	transition: 0.5s;
+	color: white;
 	user-select: none;
+	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
+				url(images/bg.png) repeat center center / cover;
+	border-radius: 50px;
 }
 
 a:hover {
@@ -85,9 +86,30 @@ h6{
 	user-select: none;
 }
 
+h5{
+	font-family: "Courier New", monospace;
+	font-size: 50px;
+	user-select: none;
+}
+
+
+h4{
+	font-family: "Courier New", monospace;
+	font-size: 60px;
+	color: #E0FBFC;
+	user-select: none;
+}
+
+h3{
+	font-family: "Courier New", monospace;
+	font-size: 70px;
+	color: #E0FBFC;
+	user-select: none;
+}
+
 h2{
 	font-family: "Courier New", monospace;
-	font-size: 40px;
+	font-size: 60px;
 	user-select: none;
 }
 
