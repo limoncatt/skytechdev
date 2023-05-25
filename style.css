@@ -3,8 +3,8 @@
 }
 
 :root{
-	--primary: black;
-	--secondary: black;
+	--primary: rgba(255, 255, 255, 0.36);
+	--secondary: rgba(0, 0, 0, 0.36);
 }
 
 nav{
@@ -34,8 +34,7 @@ body{
 
 footer{
 	position: sticky;
-	background: linear-gradient(90deg, var(--primary), var(--secondary)), 
-				url(images/bg.png) repeat center center / cover;
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
 	height: auto;
 	text-align: center;
 	top: 100%;
@@ -43,8 +42,7 @@ footer{
 
 header{
 	flex-wrap: wrap;
-	background: linear-gradient(90deg, var(--secondary), var(--secondary)), 
-				url(images/bg.png) repeat center center / cover;
+	background: linear-gradient(90deg, var(--secondary), var(--secondary));
 }
 
 p{
