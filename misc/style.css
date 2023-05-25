@@ -251,4 +251,38 @@ img{
 		color: #E0FBFC;
 		user-select: none;
 	}
+
+	img{
+		width: 256px;
+		height: 256px;
+		border-radius: 20px;
+		border-style: solid;
+		border-color: var(--secondary);
+		margin: 30px 30px;
+		-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+		-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+		box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+	}
+
+	.card{
+		background-color: var(--primary);
+		border-radius: 50px;
+		border-style: solid;
+		border-color: var(--secondary);
+		margin: 10px 10px;
+		transition: 0.3;
+		-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+		-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+		box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+	}
+
+	.card:hover{
+	}
+
+	.cardcontainer{
+		display: flex;
+  		flex-direction: row;
+ 		flex-wrap: wrap;
+	}
+
 }
