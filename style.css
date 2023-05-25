@@ -116,4 +116,105 @@ h1{
 }
 
 
-/*! SkyTech */
+@media screen and (max-width: 992px) {
+	@font-face{
+		font-family: "Courier New", monospace;
+	}
+
+	:root{
+		--primary: rgba(255, 255, 255, 0.36);
+		--secondary: rgba(0, 0, 0, 0.36);
+	}
+
+	body{
+		display: flex;
+		flex-wrap: wrap;
+		min-height: 100vh;
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
+		display: list-item;
+		color: #ffffff;
+		background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
+					url(images/bg1.png) repeat center center / cover;
+	}
+
+	footer{
+		position: sticky;
+		background: linear-gradient(90deg, var(--primary), var(--secondary));
+		height: auto;
+		text-align: center;
+		top: 100%;
+	}
+
+	header{
+		flex-wrap: wrap;
+		visibility: hidden;
+	}
+
+	p{
+		font-family: "Courier New", monospace;
+		font-size: 36px;
+		color: #E0FBFC;
+		user-select: none;
+	}
+
+	a{
+		font-family: "Courier New", monospace;
+		font-size: 40px;
+		text-decoration: none;
+		transition: 0.3s;
+		color: white;
+		user-select: none;
+		background-color: var(--primary);
+		border-radius: 15px;
+		-webkit-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
+		box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
+	}
+
+	a:hover {
+		color: blanchedalmond;
+	}
+
+	h6{
+		font-family: "Courier New", monospace;
+		font-size: 10px;
+		user-select: none;
+	}
+
+	h5{
+		font-family: "Courier New", monospace;
+		font-size: 50px;
+		user-select: none;
+	}
+
+
+	h4{
+		font-family: "Courier New", monospace;
+		font-size: 60px;
+		color: #E0FBFC;
+		user-select: none;
+	}
+
+	h3{
+		font-family: "Courier New", monospace;
+		font-size: 70px;
+		color: #E0FBFC;
+		user-select: none;
+	}
+
+	h2{
+		font-family: "Courier New", monospace;
+		font-size: 60px;
+		user-select: none;
+	}
+
+
+	h1{
+		font-family: "Courier New", monospace;
+		font-size: 70px;
+		color: #E0FBFC;
+		user-select: none;
+	}
+}
