@@ -150,10 +150,6 @@ img{
  	flex-wrap: wrap;
 }
 
-.logo{
-	visibility: hidden;
-}
-
 @media screen and (max-width: 992px) {
 	@font-face{
 		font-family: "Courier New", monospace;
