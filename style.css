@@ -147,9 +147,6 @@ img{
 }
 
 .cardcontainer{
-	display: flex;
-  	flex-direction: row;
- 	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 992px) {
