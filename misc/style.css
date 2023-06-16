@@ -1,6 +1,19 @@
 :root{
 	--primary: rgba(255, 255, 255, 0.36);
 	--secondary: rgba(0, 0, 0, 0.36);
+	--button: rgba(255, 255, 255, 0.2);
+}
+
+.logo{
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+
+.mobile-text{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
 }
 
 nav{
@@ -9,7 +22,6 @@ nav{
 	flex-wrap: wrap;
 	margin: auto;
 }
-
 body{
 	display: flex;
 	flex-wrap: wrap;
@@ -39,7 +51,7 @@ footer{
 
 header{
 	flex-wrap: wrap;
-	background: linear-gradient(90deg, var(--secondary), var(--secondary));
+	background: linear-gradient(90deg, var(--button), var(--button));
 }
 
 p{
@@ -50,8 +62,16 @@ p{
 	margin: 30px 30px;
 }
 
+p, .bio{
+		font-family: "Courier New", monospace;
+		font-size: 48px;
+		color: #E0FBFC;
+		user-select: none;
+}
+
 a{
 	margin: 10px 10px;
+	border-radius: 15px;
 	border-style: solid;
 	border-color: var(--secondary);
 	font-family: "Courier New", monospace;
@@ -60,11 +80,7 @@ a{
 	transition: 0.3s;
 	color: white;
 	user-select: none;
-	background-color: var(--primary);
-	border-radius: 15px;
-	-webkit-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
-	-moz-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
-	box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
+	background-color: var(--button);
 }
 
 a:hover {
@@ -119,20 +135,14 @@ img{
 	border-style: solid;
 	border-color: var(--secondary);
 	margin: 30px 30px;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-	-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
 }
 
 .card{
-	background-color: var(--primary);
+	background-color: var(--button);
 	border-radius: 50px;
 	border-style: solid;
 	border-color: var(--secondary);
 	transition: 0.3;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-	-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
 	margin: 30px 30px;
 }
 
@@ -149,6 +159,24 @@ img{
 @media screen and (max-width: 992px) {
 	@font-face{
 		font-family: "Courier New", monospace;
+	}
+
+	.logo{
+		width: auto;
+		height: auto;
+		visibility: visible;
+	}
+
+	.mobile-text{
+		width: auto;
+		height: auto;
+		visibility: visible;
+	}
+
+	.pc-text{
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
 	}
 
 	:root{
@@ -189,6 +217,13 @@ img{
 		user-select: none;
 	}
 
+	p, .bio{
+		font-family: "Courier New", monospace;
+		font-size: 48px;
+		color: #E0FBFC;
+		user-select: none;
+	}
+
 	a{
 		font-family: "Courier New", monospace;
 		font-size: 40px;
@@ -198,9 +233,6 @@ img{
 		user-select: none;
 		background-color: var(--primary);
 		border-radius: 15px;
-		-webkit-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
-		-moz-box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
-		box-shadow: 0px 0px 300px 0px rgba(255,255,255,1);
 	}
 
 	a:hover {
@@ -255,9 +287,6 @@ img{
 		border-style: solid;
 		border-color: var(--secondary);
 		margin: 30px 30px;
-		-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-		-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-		box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
 	}
 
 	.card{
@@ -267,9 +296,6 @@ img{
 		border-color: var(--secondary);
 		margin: 10px 10px;
 		transition: 0.3;
-		-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-		-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-		box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
 	}
 
 	.card:hover{
