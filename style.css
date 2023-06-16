@@ -62,6 +62,13 @@ p{
 	margin: 30px 30px;
 }
 
+p, .bio{
+		font-family: "Courier New", monospace;
+		font-size: 48px;
+		color: #E0FBFC;
+		user-select: none;
+}
+
 a{
 	margin: 10px 10px;
 	border-radius: 15px;
@@ -206,6 +213,13 @@ img{
 	p{
 		font-family: "Courier New", monospace;
 		font-size: 36px;
+		color: #E0FBFC;
+		user-select: none;
+	}
+
+	p, .bio{
+		font-family: "Courier New", monospace;
+		font-size: 48px;
 		color: #E0FBFC;
 		user-select: none;
 	}
