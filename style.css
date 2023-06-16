@@ -3,6 +3,12 @@
 	--secondary: rgba(0, 0, 0, 0.36);
 }
 
+.logo{
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+
 nav{
 	place-content: center;
 	display: flex;
@@ -149,6 +155,13 @@ img{
 	@font-face{
 		font-family: "Courier New", monospace;
 	}
+
+	.logo{
+		width: auto;
+		height: auto;
+		visibility: visible;
+	}
+
 
 	:root{
 		--primary: rgba(255, 255, 255, 0.36);
