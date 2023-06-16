@@ -9,11 +9,6 @@ nav{
 	flex-wrap: wrap;
 	margin: auto;
 }
-
-.bg-video{
-	filter: blur(10px);
-}
-
 body{
 	display: flex;
 	flex-wrap: wrap;
@@ -24,7 +19,7 @@ body{
 	display: list-item;
 	color: #ffffff;
 	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-				url(images/bg.mp4) no-repeat center center / cover;
+				url(images/bg.png) no-repeat center center / cover;
 	background-attachment: fixed;
 }
 
