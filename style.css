@@ -51,7 +51,7 @@ footer{
 
 header{
 	flex-wrap: wrap;
-	background: linear-gradient(90deg, var(--secondary), var(--secondary));
+	background: linear-gradient(90deg, var(--button), var(--button));
 }
 
 p{
