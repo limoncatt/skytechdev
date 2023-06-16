@@ -9,6 +9,12 @@
 	visibility: hidden;
 }
 
+.mobile-text{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
 nav{
 	place-content: center;
 	display: flex;
@@ -162,6 +168,17 @@ img{
 		visibility: visible;
 	}
 
+	.mobile-text{
+		width: auto;
+		height: auto;
+		visibility: visible;
+	}
+
+	.pc-text{
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	}
 
 	:root{
 		--primary: rgba(255, 255, 255, 0.36);
