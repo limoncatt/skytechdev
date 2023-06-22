@@ -55,7 +55,6 @@ header{
 }
 
 p{
-	font-family: "Courier New", monospace;
 	font-size: 36px;
 	color: #E0FBFC;
 	user-select: none;
@@ -63,7 +62,6 @@ p{
 }
 
 p, .bio{
-		font-family: "Courier New", monospace;
 		font-size: 48px;
 		color: #E0FBFC;
 		user-select: none;
@@ -88,41 +86,35 @@ a:hover {
 }
 
 h6{
-	font-family: "Courier New", monospace;
 	font-size: 10px;
 	user-select: none;
 }
 
 h5{
-	font-family: "Courier New", monospace;
 	font-size: 50px;
 	user-select: none;
 }
 
 
 h4{
-	font-family: "Courier New", monospace;
 	font-size: 60px;
 	color: #E0FBFC;
 	user-select: none;
 }
 
 h3{
-	font-family: "Courier New", monospace;
 	font-size: 70px;
 	color: #E0FBFC;
 	user-select: none;
 }
 
 h2{
-	font-family: "Courier New", monospace;
 	font-size: 60px;
 	user-select: none;
 }
 
 
 h1{
-	font-family: "Courier New", monospace;
 	font-size: 70px;
 	color: #E0FBFC;
 	user-select: none;
@@ -211,21 +203,18 @@ img{
 	}
 
 	p{
-		font-family: "Courier New", monospace;
 		font-size: 36px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	p, .bio{
-		font-family: "Courier New", monospace;
 		font-size: 48px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	a{
-		font-family: "Courier New", monospace;
 		font-size: 40px;
 		text-decoration: none;
 		transition: 0.3s;
@@ -240,41 +229,35 @@ img{
 	}
 
 	h6{
-		font-family: "Courier New", monospace;
 		font-size: 10px;
 		user-select: none;
 	}
 
 	h5{
-		font-family: "Courier New", monospace;
 		font-size: 50px;
 		user-select: none;
 	}
 
 
 	h4{
-		font-family: "Courier New", monospace;
 		font-size: 60px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	h3{
-		font-family: "Courier New", monospace;
 		font-size: 70px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	h2{
-		font-family: "Courier New", monospace;
 		font-size: 60px;
 		user-select: none;
 	}
 
 
 	h1{
-		font-family: "Courier New", monospace;
 		font-size: 70px;
 		color: #E0FBFC;
 		user-select: none;
