@@ -2,6 +2,7 @@
 	--primary: rgba(255, 255, 255, 0.36);
 	--secondary: rgba(0, 0, 0, 0.36);
 	--button: rgba(255, 255, 255, 0.2);
+	--white50: rgba(255, 255, 255, 0.5);
 }
 
 .logo{
@@ -88,7 +89,8 @@ a{
 }
 
 a:hover {
-	color: blanchedalmond;
+	color: var(--white50);
+	border-color: var(--white50);
 }
 
 h6{
@@ -244,7 +246,8 @@ img{
 	}
 	
 	a:hover {
-		color: blanchedalmond;
+		color: var(--white50);
+		border-color: var(--white50);
 	}
 
 	h6{
