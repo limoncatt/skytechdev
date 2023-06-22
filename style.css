@@ -3,6 +3,7 @@
 	--secondary: rgba(0, 0, 0, 0.36);
 	--button: rgba(255, 255, 255, 0.2);
 	--white50: rgba(255, 255, 255, 0.5);
+	--gray50: rgba(128, 128, 128, 0.2);
 }
 
 .logo{
@@ -41,6 +42,7 @@ body{
 .wrapper{
 	margin: 0 auto;
 	width: 75vw;
+	background-color: var(--gray50);
 }
 
 hr{
@@ -58,6 +60,9 @@ footer{
 header{
 	flex-wrap: wrap;
 	background: linear-gradient(90deg, var(--button), var(--button));
+	-webkit-box-shadow: 0px 0px 74px 9px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 74px 9px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 74px 9px rgba(0,0,0,0.4);
 }
 
 p{
@@ -149,9 +154,10 @@ img{
 	background-color: var(--button);
 	border-radius: 50px;
 	border-style: solid;
-	border-color: var(--secondary);
+	border-color: white;
 	transition: 0.3;
 	margin: 30px 30px;
+	border-width: 2px;
 }
 
 .card:hover{
@@ -201,8 +207,12 @@ img{
 		margin: 0;
 		display: list-item;
 		color: #ffffff;
-		background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-					url(images/bg1.png) repeat center center / cover;
+		background:  url(images/bg1.png) repeat center center / cover;
+		background-attachment: fixed;
+	}
+
+	.wrapper{
+		background-color: rgba(0, 0, 0, 0);
 	}
 
 	footer{
@@ -301,10 +311,11 @@ img{
 	}
 
 	.card{
-		background-color: var(--primary);
+		background-color: var(--gray50);
 		border-radius: 50px;
 		border-style: solid;
-		border-color: var(--secondary);
+		border-color: white;
+		border-width: 2px;
 		margin: 10px 10px;
 		transition: 0.3;
 	}
