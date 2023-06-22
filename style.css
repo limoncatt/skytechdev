@@ -35,7 +35,7 @@ body{
 	display: list-item;
 	color: #ffffff;
 	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-				url(images/nogilimona.png) no-repeat center center / cover;
+				url(images/bg.png) no-repeat center center / cover;
 	background-attachment: fixed;
 }
 
@@ -203,7 +203,7 @@ img{
 		margin: 0;
 		display: list-item;
 		color: #ffffff;
-		background:  url(images/nogilimona.png) repeat center center / cover;
+		background:  url(images/bg1.png) repeat center center / cover;
 		background-attachment: fixed;
 	}
 

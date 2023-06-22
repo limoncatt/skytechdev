@@ -2,6 +2,8 @@
 	--primary: rgba(255, 255, 255, 0.36);
 	--secondary: rgba(0, 0, 0, 0.36);
 	--button: rgba(255, 255, 255, 0.2);
+	--white50: rgba(255, 255, 255, 0.5);
+	--gray50: rgba(128, 128, 128, 0.2);
 }
 
 .logo{
@@ -22,6 +24,7 @@ nav{
 	flex-wrap: wrap;
 	margin: auto;
 }
+
 body{
 	display: flex;
 	flex-wrap: wrap;
@@ -32,13 +35,17 @@ body{
 	display: list-item;
 	color: #ffffff;
 	background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-				url(images/bg.png) no-repeat center center / cover;
+				url(images/nogilimona.png) no-repeat center center / cover;
 	background-attachment: fixed;
 }
 
 .wrapper{
 	margin: 0 auto;
 	width: 75vw;
+}
+
+hr{
+	color: white;
 }
 
 footer{
@@ -55,7 +62,7 @@ header{
 }
 
 p{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 36px;
 	color: #E0FBFC;
 	user-select: none;
@@ -63,7 +70,6 @@ p{
 }
 
 p, .bio{
-		font-family: "Courier New", monospace;
 		font-size: 48px;
 		color: #E0FBFC;
 		user-select: none;
@@ -73,62 +79,64 @@ a{
 	margin: 10px 10px;
 	border-radius: 15px;
 	border-style: solid;
-	border-color: var(--secondary);
-	font-family: "Courier New", monospace;
+	border-color: white;
+	border-width: 2px;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 40px;
 	text-decoration: none;
 	transition: 0.3s;
 	color: white;
 	user-select: none;
-	background-color: var(--button);
 }
 
 a:hover {
-	color: blanchedalmond;
+	color: var(--white50);
+	border-color: var(--white50);
 }
 
 h6{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 10px;
 	user-select: none;
 }
 
 h5{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 50px;
 	user-select: none;
 }
 
 
 h4{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 60px;
 	color: #E0FBFC;
 	user-select: none;
 }
 
 h3{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 70px;
 	color: #E0FBFC;
 	user-select: none;
 }
 
 h2{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 60px;
 	user-select: none;
 }
 
 
 h1{
-	font-family: "Courier New", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	font-size: 70px;
 	color: #E0FBFC;
 	user-select: none;
 }
 
 img{
+	font-family: 'JetBrains Mono', monospace;
 	width: 256px;
 	height: 256px;
 	border-radius: 20px;
@@ -138,12 +146,14 @@ img{
 }
 
 .card{
+	font-family: 'JetBrains Mono', monospace;
 	background-color: var(--button);
 	border-radius: 50px;
 	border-style: solid;
-	border-color: var(--secondary);
+	border-color: white;
 	transition: 0.3;
 	margin: 30px 30px;
+	border-width: 2px;
 }
 
 .card:hover{
@@ -158,7 +168,7 @@ img{
 
 @media screen and (max-width: 992px) {
 	@font-face{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 	}
 
 	.logo{
@@ -193,8 +203,12 @@ img{
 		margin: 0;
 		display: list-item;
 		color: #ffffff;
-		background: linear-gradient(-90deg, var(--primary), var(--secondary)), 
-					url(images/bg1.png) repeat center center / cover;
+		background:  url(images/nogilimona.png) repeat center center / cover;
+		background-attachment: fixed;
+	}
+
+	.wrapper{
+		background-color: rgba(0, 0, 0, 0);
 	}
 
 	footer{
@@ -211,70 +225,73 @@ img{
 	}
 
 	p{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 36px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	p, .bio{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 48px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	a{
-		font-family: "Courier New", monospace;
+		border-radius: 15px;
+		border-style: solid;
+		border-color: white;
+		border-width: 2px;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 40px;
 		text-decoration: none;
 		transition: 0.3s;
 		color: white;
 		user-select: none;
-		background-color: var(--primary);
-		border-radius: 15px;
 	}
-
+	
 	a:hover {
-		color: blanchedalmond;
+		color: var(--white50);
+		border-color: var(--white50);
 	}
 
 	h6{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 10px;
 		user-select: none;
 	}
 
 	h5{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 50px;
 		user-select: none;
 	}
 
 
 	h4{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 60px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	h3{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 70px;
 		color: #E0FBFC;
 		user-select: none;
 	}
 
 	h2{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 60px;
 		user-select: none;
 	}
 
 
 	h1{
-		font-family: "Courier New", monospace;
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 70px;
 		color: #E0FBFC;
 		user-select: none;
@@ -290,10 +307,11 @@ img{
 	}
 
 	.card{
-		background-color: var(--primary);
+		background-color: var(--gray50);
 		border-radius: 50px;
 		border-style: solid;
-		border-color: var(--secondary);
+		border-color: white;
+		border-width: 2px;
 		margin: 10px 10px;
 		transition: 0.3;
 	}
