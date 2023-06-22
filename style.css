@@ -42,7 +42,6 @@ body{
 .wrapper{
 	margin: 0 auto;
 	width: 75vw;
-	background-color: var(--gray50);
 }
 
 hr{
@@ -60,9 +59,6 @@ footer{
 header{
 	flex-wrap: wrap;
 	background: linear-gradient(90deg, var(--button), var(--button));
-	-webkit-box-shadow: 0px 0px 74px 9px rgba(0,0,0,0.4);
-	-moz-box-shadow: 0px 0px 74px 9px rgba(0,0,0,0.4);
-	box-shadow: 0px 0px 74px 9px rgba(0,0,0,0.4);
 }
 
 p{
