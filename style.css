@@ -201,7 +201,7 @@ img{
 		height: 100vh;
 		width: 100vw;
 		margin: 0;
-		display: inline-block;
+		display: list-item;
 		color: #ffffff;
 		background:  url(images/bg1.png) repeat center center / cover;
 		background-attachment: fixed;
