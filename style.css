@@ -164,6 +164,7 @@ img{
 }
 
 .cardcontainer{
+
 }
 
 @media screen and (max-width: 992px) {
@@ -322,9 +323,6 @@ img{
 	}
 
 	.cardcontainer{
-		display: flex;
-  		flex-direction: row;
- 		flex-wrap: wrap;
 	}
 
 }
