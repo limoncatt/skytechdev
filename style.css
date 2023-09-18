@@ -4,6 +4,8 @@
 	--button: rgba(255, 255, 255, 0.2);
 	--white50: rgba(255, 255, 255, 0.5);
 	--gray50: rgba(128, 128, 128, 0.2);
+	--cardbg: rgba(70, 60, 60, 0.705);
+	--cardbg2: rgba(27, 23, 23, 0.705);
 }
 
 .logo{
@@ -155,30 +157,24 @@ img{
 
 .card{
 	font-family: 'JetBrains Mono', monospace;
-	background-color: var(--button);
+	background-color: #463c3cb4;
 	border-radius: 50px;
 	border-style: solid;
 	border-color: white;
-	transition: 0.3;
+	transition: 0.5s;
 	margin: 30px 30px;
 	border-width: 2px;
 }
 
 .card:hover{
+	background-color: #1b1717b4;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-.cardcontainer{
-}
-
 @media screen and (max-width: 992px) {
-	@font-face{
-		font-family: 'JetBrains Mono', monospace;
-	}
-
 	.logo{
 		width: auto;
 		height: auto;
@@ -272,41 +268,6 @@ img{
 		user-select: none;
 	}
 
-	h5{
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 50px;
-		user-select: none;
-	}
-
-
-	h4{
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 60px;
-		color: #E0FBFC;
-		user-select: none;
-	}
-
-	h3{
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 70px;
-		color: #E0FBFC;
-		user-select: none;
-	}
-
-	h2{
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 60px;
-		user-select: none;
-	}
-
-
-	h1{
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 70px;
-		color: #E0FBFC;
-		user-select: none;
-	}
-
 	img{
 		width: 256px;
 		height: 256px;
@@ -315,21 +276,4 @@ img{
 		border-color: var(--secondary);
 		margin: 30px 30px;
 	}
-
-	.card{
-		background-color: var(--gray50);
-		border-radius: 50px;
-		border-style: solid;
-		border-color: white;
-		border-width: 2px;
-		margin: 30px 30px;
-		transition: 0.3;
-	}
-
-	.card:hover{
-	}
-
-	.cardcontainer{
-	}
-
 }
